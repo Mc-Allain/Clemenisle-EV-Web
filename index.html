@@ -7,40 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs/icon.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Clemenisle-EV iBooking - Home</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu&display=swap');
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .app-title {
+            font-family: "Fredoka One", cursive;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="w3-bar w3-theme-d1">
-        <a><img src="imgs/icon.png" class="w3-left bg-white" style="height: 45px;"></a>
-        <a href="#" class="w3-bar-item btn w3-border-theme w3-bottombar w3-theme w3-hover-theme">Home</a>
-        <a href="all_apps.html" class="w3-bar-item btn w3-text-theme-l3 w3-hover-none w3-border-theme-d1 w3-bottombar w3-hover-border-theme-l2
-            w3-hover-text-white w3-hide-small">All
-            Apps</a>
-        <a href="#" class="w3-bar-item btn w3-text-theme-l3 w3-hover-none w3-border-theme-d1 w3-bottombar w3-hover-border-theme-l2 
-            w3-hover-text-white w3-hide-small">About</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-            onclick="myFunction()">&#9776;</a>
-    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark w3-theme">
+        <a class="navbar-brand" href="#">
+            <img src="imgs/icon.png" style="height: 40px; width: 40px;">
+            Clemenisle-EV <span class="app-title">iBooking</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div id="demo" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
-        <a href="#" class="w3-bar-item btn w3-text-theme-l3">Link 1</a>
-        <a href="#" class="w3-bar-item btn w3-text-theme-l3">Link 2</a>
-    </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("demo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="all_apps.html">All Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+        </div>
+    </nav>
 
     <div class="w3-container mt-1 mb-5">
         <h1 class="display-5 ml-5">
@@ -199,6 +209,45 @@
                                     class="material-icons mr-1">download</i>Download</a>
                         </li>
                     </ul>
+                </div>
+
+                <div class="w3-card w3-padding-large mt-5">
+                    <h4><b>Newly Added Features</b></h4>
+                    <ul>
+                        <li> Notification Added</li>
+                        <li> Comment System Added</li>
+                        <li> Application Status Alert Added</li>
+                        <li> Application Update Alert Added</li>
+                        <li> Update Notes Added</li>
+                        <li> Profile Image Added</li>
+                    </ul>
+
+                    <h6 class="mt-1">
+                        <b>Version History</b>
+                        <span class="ml-1 color-initial"> (Pre-Release)</span>
+                    </h6>
+
+                    <div class="ml-3 mt-4">
+                        <i>v0.2: <span class="color-initial small">October 15, 2021</span></i>
+                        <ul class="mt-1">
+                            <li> Booking System Added</li>
+                            <li> User Profile Added</li>
+                        </ul>
+
+                        <i>v0.1: <span class="color-initial small">October 07, 2021</span></i>
+                        <ul class="mt-1">
+                            <li> Account Feature Added</li>
+                            <li> Like System Added</li>
+                            <li> Interactive Map Added</li>
+                            <li> Street View Added</li>
+                        </ul>
+
+                        <i>v0.0: <span class="color-initial small">September 25, 2021</span></i>
+                        <ul class="mt-1">
+                            <li> Application Created</li>
+                            <li> Tourist Spots Added</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
