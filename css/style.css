@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu&display=swap");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.app-title {
+  font-family: "Fredoka One", cursive !important;
+}
+
 .w3-theme-l5 {
   color: #000 !important;
   background-color: #ecf7ff !important;
