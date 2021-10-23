@@ -14,6 +14,10 @@ h6 {
   font-family: "Fredoka One", cursive !important;
 }
 
+.color-initial {
+  color: #787878 !important;
+}
+
 .w3-theme-l5 {
   color: #000 !important;
   background-color: #ecf7ff !important;
@@ -100,7 +104,4 @@ h6 {
 }
 .w3-hover-border-theme-l2:hover {
   border-color: #41b0ff !important;
-}
-.color-initial {
-  color: #787878 !important;
 }
